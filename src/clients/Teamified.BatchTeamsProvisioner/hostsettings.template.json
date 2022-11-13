@@ -1,0 +1,5 @@
+{
+  "ClientId": "Azure_AD_App_ClientId",
+  "TenantId": "Your_Azure_AD_Tenant_Id",
+  "ApiClientId": "Azure_AD_App_ClientId_For_API"
+}

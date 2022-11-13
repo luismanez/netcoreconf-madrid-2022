@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "teamified-for-share-point",
+    "libraryId": "865274e2-dcbf-4ad6-b9ff-f1a75c37d56f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Teamified for SharePoint",
+    "solutionShortDescription": "Teamified for SharePoint description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

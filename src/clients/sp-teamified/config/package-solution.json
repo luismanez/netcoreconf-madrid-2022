@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "teamified-for-share-point-client-side-solution",
+    "id": "865274e2-dcbf-4ad6-b9ff-f1a75c37d56f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Teamified for SharePoint description"
+      },
+      "longDescription": {
+        "default": "Teamified for SharePoint description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "teamified-for-share-point Feature",
+        "description": "The feature that activates elements of the teamified-for-share-point solution.",
+        "id": "ea16b4e0-f1ca-426b-9c67-5c2720e3c490",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/teamified-for-share-point.sppkg"
+  }
+}
