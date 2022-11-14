@@ -5,8 +5,8 @@ import { ITeamsListState } from "./ITeamsListState";
 import { escape } from '@microsoft/sp-lodash-subset';
 import { AadTokenProvider } from '@microsoft/sp-http';
 import { FetchRequestAdapter } from '@microsoft/kiota-http-fetchlibrary';
+import { AzureAdSpfxAuthenticationProvider } from '@microsoft/kiota-authentication-spfx';
 import { TeamifiedApiClient } from '../client/teamifiedApiClient';
-import { SpfxAadAuthenticationProvider } from "../auth/SpfxAadAuthenticationProvider";
 
 export default class TeamsList extends React.Component<ITeamsListProps, ITeamsListState> {
 
@@ -24,7 +24,7 @@ export default class TeamsList extends React.Component<ITeamsListProps, ITeamsLi
       .then((tokenProvider: AadTokenProvider): void => {
 
         const authProvider =
-          new SpfxAadAuthenticationProvider(
+          new AzureAdSpfxAuthenticationProvider(
             tokenProvider, 
             this.azureAdApplicationIdUri);
         
