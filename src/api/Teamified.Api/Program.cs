@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
+using Teamified.Api.PingModule;
 using Teamified.Api.Teams;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -67,6 +68,7 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapPingEndpoints();
 app.MapTeamsEndpoints();
 
 app.Run();

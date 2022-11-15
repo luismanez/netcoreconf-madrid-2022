@@ -16,15 +16,6 @@ namespace Teamified.Api.Teams
 
         public static IEndpointRouteBuilder MapTeamsEndpoints(this IEndpointRouteBuilder endpoints)
         {
-            endpoints.MapGet("/ping", () => new Ping { 
-                Id = Guid.NewGuid(), 
-                Now = DateTime.Now.ToString() 
-                })
-                .Produces<Ping>(200)
-                .WithName("Ping")
-                .WithTags("DiagnosticsModule")
-                .AllowAnonymous();
-
             endpoints.MapGet("/teams", ListTeams.Handle)
                 .Produces<IEnumerable<Team>>(200)
                 .WithName("ListTeams")
